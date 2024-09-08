@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "scripts": {
     "test": "npm test", 
-    "start": "npm index.mjs"
+    "start": "node index.mjs"
   },
   "keywords": [
     "consul",
