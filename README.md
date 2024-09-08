@@ -19,3 +19,18 @@ Once a container is no longer reported in docker, it will be removed from the ca
 
 The node process will be running indefinitely until killed. 
 Any errors are logged to the console.
+
+# Running in a docker container
+
+This node process can also be deployed as a standalone docker container, see Dockerfile in this repository. 
+
+```
+
+docker run -d \
+    --name=node-consul-registrator \
+    --net=host \
+    --volume=/var/run/docker.sock:/var/run/docker.sock \
+    paulrutter/node-consul-registrator:latest \
+      consul://localhost:8500
+
+```
