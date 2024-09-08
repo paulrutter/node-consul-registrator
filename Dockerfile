@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-RUN mkdir /app && cd /app
+WORKDIR /app 
 ADD index.mjs package.json package-lock.json /app
 
 RUN npm install
