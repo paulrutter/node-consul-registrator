@@ -1,0 +1,19 @@
+{
+  "name": "node-consul-registrator",
+  "version": "1.0.0",
+  "description": "Node.js based service that registers Docker containers with Consul",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "consul",
+    "docker"
+  ],
+  "author": "paul@blueconic.com",
+  "license": "MIT",
+  "dependencies": {
+    "consul": "^1.2.0",
+    "dockerode": "^4.0.2"
+  }
+}
