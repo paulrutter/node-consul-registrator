@@ -5,4 +5,5 @@ ADD index.mjs package.json package-lock.json /app
 
 RUN npm install
 
-ENTRYPOINT ["npm start"]
+ENTRYPOINT ["node"]
+CMD ["index.mjs"]

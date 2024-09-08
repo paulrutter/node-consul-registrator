@@ -25,12 +25,15 @@ Any errors are logged to the console.
 This node process can also be deployed as a standalone docker container, see Dockerfile in this repository. 
 
 ```
+docker run -d
+  --name=node-consul-registrator
+  --net=host 
+  --volume=/var/run/docker.sock:/var/run/docker.sock 
+  node-consul-registrator:latest
 
-docker run -d \
-    --name=node-consul-registrator \
-    --net=host \
-    --volume=/var/run/docker.sock:/var/run/docker.sock \
-    paulrutter/node-consul-registrator:latest \
-      consul://localhost:8500
+```
+## Build
 
+```
+docker build -t node-consul-registrator .
 ```

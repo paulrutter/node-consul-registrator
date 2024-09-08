@@ -4,7 +4,7 @@
   "description": "Node.js based service that registers Docker containers with Consul",
   "main": "index.mjs",
   "scripts": {
-    "test": "npm test", 
+    "test": "TODO", 
     "start": "node index.mjs"
   },
   "keywords": [
